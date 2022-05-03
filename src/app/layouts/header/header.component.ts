@@ -6,20 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  logo?: string;
 
-	public getLogo(): string | undefined {
-		return this.logo;
-	}
-
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit(): void {
-    this.logo = this.getLogoFromBackend();
-  }
-
-  private getLogoFromBackend():string{
-    return 'Logo';
   }
 
 }
