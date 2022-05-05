@@ -1,21 +1,19 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Articulo } from '../articulo.model';
-import { registerLocaleData } from '@angular/common';
-import localeES from '@angular/common/locales/es';
-
-registerLocaleData(localeES);
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-articulo-card',
   templateUrl: './articulo-card.component.html',
-  styleUrls: ['./articulo-card.component.scss']
+  styleUrls: ['./articulo-card.component.scss'],
 })
 export class ArticuloCardComponent implements OnInit {
-    @Input() articulo?: Articulo;
-    
-  constructor() { }
+  @Input() articulo?: Articulo;
 
-  ngOnInit(): void {
+  constructor(private rotuer: Router) {}
+
+  ngOnInit(): void {}
+
+  public navegarAFicha(tipoCatalogo: number): void {
+    this.rotuer.navigate(['catalogo', tipoCatalogo]);
   }
-
 }

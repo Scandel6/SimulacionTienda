@@ -12,6 +12,8 @@ import { LogoComponent } from './logo/logo.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ArticuloCardComponent } from './articulo/articulo-card/articulo-card.component';
 import { ArticuloListComponent } from './articulo/articulo-list/articulo-list.component';
+import { ArticuloCardCatalogoComponent } from './articulo/articulo-card-catalogo/articulo-card-catalogo.component';
+import { CatalogoComponent } from './catalogo/catalogo.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ArticuloListComponent } from './articulo/articulo-list/articulo-list.co
     CarouselComponent,
     LogoComponent,
     ArticuloCardComponent,
-    ArticuloListComponent
+    ArticuloListComponent,
+    ArticuloCardCatalogoComponent,
+    CatalogoComponent
   ],
   imports: [
     BrowserModule,
