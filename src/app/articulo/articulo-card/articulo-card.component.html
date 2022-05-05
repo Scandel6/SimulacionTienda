@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem" *ngIf="articulo">
+    <img class="card-img-top" [src]="articulo.imagen" alt="Zapatilla de {{articulo.nombre}}" />
+    <div class="card-body">
+        <h5 class="card-title">{{ articulo.nombre }}</h5>
+        <p>{{articulo.precio | currency: 'EUR':true }}</p>
+        <a class="btn btn-primary bg-dark " href="#">Ver más</a>
+    </div>
+</div>

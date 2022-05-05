@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { LogoComponent } from './logo/logo.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ArticuloCardComponent } from './articulo/articulo-card/articulo-card.component';
+import { ArticuloListComponent } from './articulo/articulo-list/articulo-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FooterComponent,
     HomeComponent,
     CarouselComponent,
-    LogoComponent
+    LogoComponent,
+    ArticuloCardComponent,
+    ArticuloListComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HttpClientModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [{
+    provide:LOCALE_ID,
+    useValue: 'es-ES'
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
