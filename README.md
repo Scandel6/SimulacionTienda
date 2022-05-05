@@ -28,5 +28,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ##Author indications
 
-To use the icons from footer run:
-`npm i @fortawesome/angular-fontawesome` and ng `add @fortawesome/angular-fontawesome@0.10.0`
+To use the icons from footer run 
+```bash
+$ npm i @fortawesome/angular-fontawesome 
+# and
+$ ng add @fortawesome/angular-fontawesome@0.10.0
+```
